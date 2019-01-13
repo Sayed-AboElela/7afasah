@@ -45,8 +45,69 @@
 
 
 
-.top-nav.xs-NavFix{
-    .left-links{
+.top-nav{
+    .left-links.xs-NavFix{
+        position: fixed;
+        width: 220px;
+        background-color: white;
+
+        transition: all 0.5s ease;
         
+        top: 0;
+        right: -220px;
+        bottom: 0;
+
+        padding-top: 50px;
+
+        ul{
+            flex-direction: column;
+
+            .aFixx{
+                color: black;
+                justify-content: flex-start;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-right: 20px;
+                margin-left: 20px;
+
+            }
+        }
     }
+}
+
+
+
+
+.navOpenBtn{
+    font-size: 20px;
+
+    span{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+
+.closeNavBtnSvg{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+
+
+.sideOPend{
+    right: 0!important;
+    z-index: 9!important;
+}
+.overOpend{
+    transition: all 0.5s ease;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+
 }

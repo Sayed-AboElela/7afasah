@@ -86,7 +86,7 @@ a:focus, a:hover {
 /* line 16, mainStyle/_headerFix.scss */
 .header-centerLogo {
   position: relative;
-  z-index: 9;
+  z-index: 3;
   padding-top: 8vh;
   display: flex;
   justify-content: center;
@@ -103,7 +103,7 @@ a:focus, a:hover {
 /* line 36, mainStyle/_headerFix.scss */
 .downBtnContainer-fix {
   position: relative;
-  z-index: 9;
+  z-index: 3;
   margin-bottom: 50px;
   width: 100%;
   height: 60px;
@@ -163,5 +163,57 @@ a:focus, a:hover {
     /* line 34, mainStyle/_sideNav.scss */
     .top-nav .left-links ul .aFixx:hover:before {
       width: 100%; }
+
+/* line 49, mainStyle/_sideNav.scss */
+.top-nav .left-links.xs-NavFix {
+  position: fixed;
+  width: 220px;
+  background-color: white;
+  transition: all 0.5s ease;
+  top: 0;
+  right: -220px;
+  bottom: 0;
+  padding-top: 50px; }
+  /* line 62, mainStyle/_sideNav.scss */
+  .top-nav .left-links.xs-NavFix ul {
+    flex-direction: column; }
+    /* line 65, mainStyle/_sideNav.scss */
+    .top-nav .left-links.xs-NavFix ul .aFixx {
+      color: black;
+      justify-content: flex-start;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-right: 20px;
+      margin-left: 20px; }
+
+/* line 81, mainStyle/_sideNav.scss */
+.navOpenBtn {
+  font-size: 20px; }
+  /* line 84, mainStyle/_sideNav.scss */
+  .navOpenBtn span {
+    margin-right: 5px;
+    margin-left: 5px; }
+
+/* line 91, mainStyle/_sideNav.scss */
+.closeNavBtnSvg {
+  position: absolute;
+  top: 20px;
+  left: 30px; }
+
+/* line 99, mainStyle/_sideNav.scss */
+.sideOPend {
+  right: 0 !important;
+  z-index: 9 !important; }
+
+/* line 103, mainStyle/_sideNav.scss */
+.overOpend {
+  transition: all 0.5s ease;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9; }
 
 /*# sourceMappingURL=style.css.map */
