@@ -216,4 +216,105 @@ a:focus, a:hover {
   bottom: 0;
   z-index: 9; }
 
+/* line 1, mainStyle/_vissionFix.scss */
+.vission-section {
+  background-image: url(../images/2.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right; }
+  /* line 7, mainStyle/_vissionFix.scss */
+  .vission-section:before {
+    background-image: url("../images/pattren2.png");
+    background-repeat: no-repeat;
+    background-position: right; }
+  /* line 14, mainStyle/_vissionFix.scss */
+  .vission-section .vission-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 325px;
+    position: relative;
+    z-index: 3;
+    color: white; }
+    /* line 27, mainStyle/_vissionFix.scss */
+    .vission-section .vission-info h3 {
+      font-family: "Frutiger-Bold";
+      font-size: 24px; }
+    /* line 31, mainStyle/_vissionFix.scss */
+    .vission-section .vission-info p {
+      font-family: "Frutiger-Light";
+      font-size: 18px;
+      line-height: 38px;
+      margin: 0;
+      max-width: 600px;
+      text-align: justify; }
+
+/* line 1, mainStyle/_messageFix.scss */
+.message-section {
+  background-image: url(../images/3.jpg);
+  background-repeat: no-repeat; }
+  /* line 6, mainStyle/_messageFix.scss */
+  .message-section:before {
+    background-image: url("../images/pattren3.png");
+    background-repeat: no-repeat;
+    background-position: right; }
+  /* line 13, mainStyle/_messageFix.scss */
+  .message-section .message-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 325px;
+    position: relative;
+    z-index: 3; }
+    /* line 25, mainStyle/_messageFix.scss */
+    .message-section .message-info h3 {
+      font-family: "Frutiger-Bold";
+      font-size: 24px;
+      color: #14c7b8; }
+    /* line 30, mainStyle/_messageFix.scss */
+    .message-section .message-info p {
+      font-family: "Frutiger-Light";
+      font-size: 18px;
+      line-height: 38px;
+      margin: 0;
+      color: black;
+      max-width: 600px;
+      text-align: justify; }
+
+/* line 1, mainStyle/_phylsf.scss */
+.phylsf-section {
+  background-image: url(../images/4.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right; }
+  /* line 7, mainStyle/_phylsf.scss */
+  .phylsf-section:before {
+    background-image: url("../images/pattren4.png");
+    background-repeat: no-repeat;
+    background-position: left; }
+  /* line 14, mainStyle/_phylsf.scss */
+  .phylsf-section .phylsf-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 55%;
+    min-height: 325px;
+    position: relative;
+    z-index: 3; }
+    /* line 26, mainStyle/_phylsf.scss */
+    .phylsf-section .phylsf-info h3 {
+      font-family: "Frutiger-Bold";
+      font-size: 24px;
+      color: white; }
+    /* line 31, mainStyle/_phylsf.scss */
+    .phylsf-section .phylsf-info p {
+      font-family: "Frutiger-Light";
+      font-size: 18px;
+      line-height: 38px;
+      margin: 0;
+      color: white;
+      max-width: 600px;
+      text-align: justify; }
+
 /*# sourceMappingURL=style.css.map */

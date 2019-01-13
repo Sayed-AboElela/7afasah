@@ -1,0 +1,45 @@
+.vission-section{
+    background-image: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+    
+    &:before{
+        background-image: url('../images/pattren2.png');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    
+    .vission-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+        min-height: 325px;
+
+        position: relative;
+        z-index: 3;
+
+        color: white;
+        
+        h3{
+            font-family: $FB;
+            font-size: 24px;
+        }
+        p{
+            font-family: $FL;
+            font-size: 18px;
+            line-height: 38px;
+            margin: 0;
+
+            max-width: 600px;
+            text-align: justify;
+
+        }
+    }
+
+
+
+}
