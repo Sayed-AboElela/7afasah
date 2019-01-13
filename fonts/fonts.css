@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: 'Frutiger-Light';
+    src: url('FrutigerLTArabic-45Light.eot');
+    src: url('FrutigerLTArabic-45Light.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTArabic-45Light.woff2') format('woff2'),
+        url('FrutigerLTArabic-45Light.woff') format('woff'),
+        url('FrutigerLTArabic-45Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Frutiger-Black';
+    src: url('FrutigerLTArabic-75Black.eot');
+    src: url('FrutigerLTArabic-75Black.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTArabic-75Black.woff2') format('woff2'),
+        url('FrutigerLTArabic-75Black.woff') format('woff'),
+        url('FrutigerLTArabic-75Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Frutiger-Roman';
+    src: url('FrutigerLTArabic-55Roman.eot');
+    src: url('FrutigerLTArabic-55Roman.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTArabic-55Roman.woff2') format('woff2'),
+        url('FrutigerLTArabic-55Roman.woff') format('woff'),
+        url('FrutigerLTArabic-55Roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Frutiger-Bold';
+    src: url('FrutigerLTArabic-65Bold.eot');
+    src: url('FrutigerLTArabic-65Bold.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerLTArabic-65Bold.woff2') format('woff2'),
+        url('FrutigerLTArabic-65Bold.woff') format('woff'),
+        url('FrutigerLTArabic-65Bold.ttf') format('truetype');
+}
