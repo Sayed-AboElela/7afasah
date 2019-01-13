@@ -16,8 +16,8 @@ body{
 
 
 a:focus, a:hover {
-    color: unset;
     text-decoration: none;
+    color: white;   
   }
   
   .aFixx{
@@ -27,6 +27,8 @@ a:focus, a:hover {
     align-items: center;
     justify-content: center;
   
+    color: white;
+
     background-color: transparent;
     border: 0;
     box-shadow: none;
@@ -70,29 +72,29 @@ a:focus, a:hover {
        left: 0;
        z-index: 2;
        content: '';
-       transition: all 0.5s ease;
        background-image: url('../images/pattren.png');
-
-       animation: mymove 30s infinite;
+       
+       transition: all 0.5s ease;
+       animation: testmove 100s infinite;
     }
  }
 
 
 
- @keyframes mymove {
+ @keyframes testmove {
     0%{
        transform: scale(1);
-       left:0;
+    //    left:0;
     }
     
     50%{
-        transform: scale(1.08);
-        left:-5%;
+        transform: scale(1.2);
+        // left:-5%;
     }
     
     100%{
         transform: scale(1);
-        left:0;
+        // left:0;
     }
     
 }
