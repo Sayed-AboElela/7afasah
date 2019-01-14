@@ -1,0 +1,46 @@
+.footer-section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .social-btns{
+        display: flex;
+        margin-bottom: 35px;
+
+        .aFixx{
+            background-color: rgb(58, 54, 55);
+            width: 32px;
+            height: 32px;
+
+            margin-right: 2.5px;
+            margin-left: 2.5px;
+
+            &:hover{
+                background-color: #f8736a;
+            }
+            
+        }
+    }
+
+
+
+    .social-txt{
+        display: flex;
+        span{
+            display: flex;
+
+            margin-right: 2.5px;
+            margin-left: 2.5px;
+            
+            .aFixx{
+                margin-right: 2.5px;
+                margin-left: 2.5px;
+            }
+        }
+    }
+    
+}

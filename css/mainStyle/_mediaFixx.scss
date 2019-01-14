@@ -1,0 +1,80 @@
+ /* Medium Devices, Desktops */
+ @media only screen and (max-width : 992px) {
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .ourService-section{
+        background-size: cover;
+    }
+    .studios-item{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+    .top-nav{
+        flex-direction: row-reverse;
+    }
+    .header-centerLogo span {
+        font-size: 24px;
+    }
+
+
+    .social-section .contrFixx , .social-section .social-btns{
+        flex-direction: column;
+    }
+
+    .social-section .right-section , .social-section .left-section,
+    .social-section .social-btns .right-btn , .social-section .social-btns .left-btn{
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+    }
+    .social-section .social-btns .aFixx{
+        margin-bottom: 25px;
+    }
+
+    .social-section .social-item{
+        width: 90vw;
+    }
+
+    .footer-section .social-txt{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+    .header-centerLogo span {
+        font-size: 20px;
+    }
+
+
+    .service-item{
+        flex-direction: column;
+        align-items: center;
+        
+        .item-img{margin: 0;}
+
+        .item-info .item-header , .item-info .item-txt{
+            text-align: center;
+        }
+
+        
+    }
+}

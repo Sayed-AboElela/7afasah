@@ -44,11 +44,19 @@ a:focus, a:hover {
     opacity: 1;
     background-color: black !important; }
 
-/* line 64, mainStyle/_helpers.scss */
+/* line 61, mainStyle/_helpers.scss */
+.section-header {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Frutiger-Black";
+  color: white;
+  margin-bottom: 45px; }
+
+/* line 71, mainStyle/_helpers.scss */
 .patrnBack-show {
   position: relative;
   overflow: hidden; }
-  /* line 67, mainStyle/_helpers.scss */
+  /* line 74, mainStyle/_helpers.scss */
   .patrnBack-show::before {
     position: absolute;
     top: 0;
@@ -59,7 +67,7 @@ a:focus, a:hover {
     content: '';
     background-image: url("../images/pattren.png");
     transition: all 0.5s ease;
-    animation: testmove 100s infinite; }
+    animation: testmove 20s infinite; }
 
 @keyframes testmove {
   0% {
@@ -317,28 +325,46 @@ a:focus, a:hover {
       max-width: 600px;
       text-align: justify; }
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 53, mainStyle/_phylsf.scss */
+  .phylsf-section .phylsf-info {
+    padding: 0; }
+    /* line 55, mainStyle/_phylsf.scss */
+    .phylsf-section .phylsf-info h3, .phylsf-section .phylsf-info p {
+      color: black; } }
 /* line 3, mainStyle/_developmentFix.scss */
+.development-section.patrnBack-show::before {
+  background-image: url("../images/pattren5.png");
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+/* line 9, mainStyle/_developmentFix.scss */
 .development-section {
   padding-top: 90px;
   padding-bottom: 90px; }
+  /* line 13, mainStyle/_developmentFix.scss */
+  .development-section .container {
+    z-index: 5;
+    position: relative; }
 
-/* line 9, mainStyle/_developmentFix.scss */
+/* line 20, mainStyle/_developmentFix.scss */
 .development-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px; }
-  /* line 15, mainStyle/_developmentFix.scss */
+  /* line 26, mainStyle/_developmentFix.scss */
   .development-item .itemHeader {
     text-align: center;
     margin-bottom: 50px;
     position: relative; }
-    /* line 20, mainStyle/_developmentFix.scss */
+    /* line 31, mainStyle/_developmentFix.scss */
     .development-item .itemHeader h3 {
       font-size: 18px;
       font-family: "Frutiger-Black";
       max-width: 285px; }
-    /* line 27, mainStyle/_developmentFix.scss */
+    /* line 38, mainStyle/_developmentFix.scss */
     .development-item .itemHeader:before {
       position: absolute;
       content: '';
@@ -347,14 +373,336 @@ a:focus, a:hover {
       height: 2px;
       bottom: -25px;
       right: 42%; }
-  /* line 39, mainStyle/_developmentFix.scss */
+  /* line 50, mainStyle/_developmentFix.scss */
   .development-item .itemInfo {
     font-size: 15px;
     font-family: "Frutiger-Roman";
     max-width: 340px;
     text-align: center; }
-    /* line 44, mainStyle/_developmentFix.scss */
+    /* line 55, mainStyle/_developmentFix.scss */
     .development-item .itemInfo p {
       margin: 0; }
+
+/* line 3, mainStyle/_studioFix.scss */
+.studios-section.patrnBack-show::before {
+  background-image: url("../images/pattren6.png");
+  background-repeat: no-repeat; }
+
+/* line 8, mainStyle/_studioFix.scss */
+.studios-section {
+  background-image: url("../images/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 73px;
+  padding-bottom: 90px; }
+  /* line 15, mainStyle/_studioFix.scss */
+  .studios-section .container {
+    z-index: 5;
+    position: relative; }
+
+/* line 22, mainStyle/_studioFix.scss */
+.studios-item {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 55px;
+  padding-right: 25px;
+  padding-left: 25px;
+  position: relative; }
+  /* line 32, mainStyle/_studioFix.scss */
+  .studios-item .item-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  /* line 41, mainStyle/_studioFix.scss */
+  .studios-item .header-txt {
+    padding-top: 20px; }
+    /* line 44, mainStyle/_studioFix.scss */
+    .studios-item .header-txt .aFixx {
+      font-size: 16px;
+      font-family: "Frutiger-Black";
+      color: black;
+      position: relative;
+      height: 40px;
+      align-items: baseline;
+      margin-bottom: 20px; }
+      /* line 54, mainStyle/_studioFix.scss */
+      .studios-item .header-txt .aFixx:before {
+        transition: all 0.5s ease;
+        position: absolute;
+        content: '';
+        background-color: #3a3637;
+        width: 50px;
+        height: 2px;
+        bottom: 0px;
+        right: 50%;
+        transform: translate(50%); }
+      /* line 66, mainStyle/_studioFix.scss */
+      .studios-item .header-txt .aFixx:hover {
+        color: #f8736a; }
+        /* line 69, mainStyle/_studioFix.scss */
+        .studios-item .header-txt .aFixx:hover:before {
+          background-color: #f8736a; }
+  /* line 78, mainStyle/_studioFix.scss */
+  .studios-item .item-data p {
+    margin: 0;
+    font-size: 15px;
+    text-align: center; }
+  /* line 85, mainStyle/_studioFix.scss */
+  .studios-item .seeBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    /* line 90, mainStyle/_studioFix.scss */
+    .studios-item .seeBtn .aFixx {
+      width: 34px;
+      height: 34px;
+      background-color: #f2f2f2; }
+      /* line 95, mainStyle/_studioFix.scss */
+      .studios-item .seeBtn .aFixx:hover {
+        background-color: #f8736a; }
+        /* line 98, mainStyle/_studioFix.scss */
+        .studios-item .seeBtn .aFixx:hover img {
+          content: url("../images/plsVctrHvrd.png") !important; }
+
+/* line 2, mainStyle/_socialFix.scss */
+.social-section.patrnBack-show::before {
+  background-image: url("../images/pattren7.png");
+  background-repeat: no-repeat;
+  background-position: right; }
+
+/* line 9, mainStyle/_socialFix.scss */
+.social-section {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  /* line 13, mainStyle/_socialFix.scss */
+  .social-section .section-header {
+    color: black; }
+  /* line 18, mainStyle/_socialFix.scss */
+  .social-section .container {
+    position: relative;
+    z-index: 5; }
+  /* line 23, mainStyle/_socialFix.scss */
+  .social-section .contrFixx {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* line 31, mainStyle/_socialFix.scss */
+  .social-section .right-section {
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  /* line 40, mainStyle/_socialFix.scss */
+  .social-section .left-section {
+    width: 100%;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  /* line 51, mainStyle/_socialFix.scss */
+  .social-section .social-item {
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    width: 368px;
+    height: 177px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; }
+    /* line 63, mainStyle/_socialFix.scss */
+    .social-section .social-item .item-img {
+      margin-bottom: 20px; }
+    /* line 67, mainStyle/_socialFix.scss */
+    .social-section .social-item .item-txt {
+      font-size: 16px;
+      font-family: "Frutiger-Black";
+      pointer-events: none; }
+  /* line 76, mainStyle/_socialFix.scss */
+  .social-section .social-btns {
+    display: flex;
+    margin-bottom: 20px; }
+    /* line 81, mainStyle/_socialFix.scss */
+    .social-section .social-btns .right-btn {
+      width: 100%;
+      margin-left: 15px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+    /* line 88, mainStyle/_socialFix.scss */
+    .social-section .social-btns .left-btn {
+      width: 100%;
+      margin-right: 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+    /* line 96, mainStyle/_socialFix.scss */
+    .social-section .social-btns .aFixx {
+      border-style: solid;
+      border-width: 2px;
+      border-color: #3a3637;
+      width: 191px;
+      height: 52px;
+      font-size: 15px;
+      font-family: "Frutiger-Bold";
+      color: black; }
+      /* line 107, mainStyle/_socialFix.scss */
+      .social-section .social-btns .aFixx:hover {
+        background-color: #f8736a;
+        border-color: #f8736a;
+        color: white; }
+
+/* line 1, mainStyle/_ourServiceFixx.scss */
+.ourService-section.patrnBack-show::before {
+  background-image: url("../images/pattren8.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  bottom: -70px; }
+
+/* line 10, mainStyle/_ourServiceFixx.scss */
+.ourService-section {
+  background-image: url("../images/1.jpg");
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  /* line 16, mainStyle/_ourServiceFixx.scss */
+  .ourService-section .container {
+    position: relative;
+    z-index: 5; }
+
+/* line 23, mainStyle/_ourServiceFixx.scss */
+.service-item {
+  display: flex;
+  margin-bottom: 50px; }
+  /* line 27, mainStyle/_ourServiceFixx.scss */
+  .service-item .item-img {
+    margin-left: 25px; }
+  /* line 31, mainStyle/_ourServiceFixx.scss */
+  .service-item .item-info {
+    padding-top: 10px; }
+    /* line 34, mainStyle/_ourServiceFixx.scss */
+    .service-item .item-info .item-header {
+      font-size: 17px;
+      font-family: "Frutiger-Black";
+      color: white;
+      margin-bottom: 20px; }
+    /* line 41, mainStyle/_ourServiceFixx.scss */
+    .service-item .item-info .item-txt {
+      font-size: 15px;
+      color: white; }
+
+/* line 51, mainStyle/_ourServiceFixx.scss */
+.service-btn {
+  display: flex;
+  justify-content: center; }
+  /* line 55, mainStyle/_ourServiceFixx.scss */
+  .service-btn .aFixx {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: rgba(58, 54, 55, 0);
+    width: 191px;
+    height: 52px;
+    font-size: 15px;
+    font-family: "Frutiger-Bold"; }
+    /* line 67, mainStyle/_ourServiceFixx.scss */
+    .service-btn .aFixx:hover {
+      background-color: #f8736a;
+      border-color: #f8736a; }
+
+/* line 1, mainStyle/_footerFixx.scss */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  /* line 10, mainStyle/_footerFixx.scss */
+  .footer-section .social-btns {
+    display: flex;
+    margin-bottom: 35px; }
+    /* line 14, mainStyle/_footerFixx.scss */
+    .footer-section .social-btns .aFixx {
+      background-color: #3a3637;
+      width: 32px;
+      height: 32px;
+      margin-right: 2.5px;
+      margin-left: 2.5px; }
+      /* line 22, mainStyle/_footerFixx.scss */
+      .footer-section .social-btns .aFixx:hover {
+        background-color: #f8736a; }
+  /* line 31, mainStyle/_footerFixx.scss */
+  .footer-section .social-txt {
+    display: flex; }
+    /* line 33, mainStyle/_footerFixx.scss */
+    .footer-section .social-txt span {
+      display: flex;
+      margin-right: 2.5px;
+      margin-left: 2.5px; }
+      /* line 39, mainStyle/_footerFixx.scss */
+      .footer-section .social-txt span .aFixx {
+        margin-right: 2.5px;
+        margin-left: 2.5px; }
+
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 11, mainStyle/_mediaFixx.scss */
+  .ourService-section {
+    background-size: cover; }
+
+  /* line 14, mainStyle/_mediaFixx.scss */
+  .studios-item {
+    margin-bottom: 30px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* line 24, mainStyle/_mediaFixx.scss */
+  .top-nav {
+    flex-direction: row-reverse; }
+
+  /* line 27, mainStyle/_mediaFixx.scss */
+  .header-centerLogo span {
+    font-size: 24px; }
+
+  /* line 32, mainStyle/_mediaFixx.scss */
+  .social-section .contrFixx, .social-section .social-btns {
+    flex-direction: column; }
+
+  /* line 36, mainStyle/_mediaFixx.scss */
+  .social-section .right-section, .social-section .left-section,
+  .social-section .social-btns .right-btn, .social-section .social-btns .left-btn {
+    align-items: center;
+    margin: 0;
+    justify-content: center; }
+
+  /* line 42, mainStyle/_mediaFixx.scss */
+  .social-section .social-btns .aFixx {
+    margin-bottom: 25px; }
+
+  /* line 46, mainStyle/_mediaFixx.scss */
+  .social-section .social-item {
+    width: 90vw; }
+
+  /* line 50, mainStyle/_mediaFixx.scss */
+  .footer-section .social-txt {
+    flex-direction: column;
+    align-items: center; } }
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /* line 63, mainStyle/_mediaFixx.scss */
+  .header-centerLogo span {
+    font-size: 20px; }
+
+  /* line 68, mainStyle/_mediaFixx.scss */
+  .service-item {
+    flex-direction: column;
+    align-items: center; }
+    /* line 72, mainStyle/_mediaFixx.scss */
+    .service-item .item-img {
+      margin: 0; }
+    /* line 74, mainStyle/_mediaFixx.scss */
+    .service-item .item-info .item-header, .service-item .item-info .item-txt {
+      text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

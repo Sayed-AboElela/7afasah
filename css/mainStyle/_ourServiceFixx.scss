@@ -1,0 +1,72 @@
+.ourService-section.patrnBack-show::before{
+    background-image: url('../images/pattren8.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    bottom: -70px;
+
+}
+
+
+.ourService-section{
+    background-image: url('../images/1.jpg');
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+
+    .container{
+        position: relative;
+        z-index: 5;
+    }
+
+}
+
+.service-item{
+    display: flex;
+    margin-bottom: 50px;
+
+    .item-img{
+        margin-left: 25px;
+    }
+
+    .item-info{
+        padding-top: 10px;
+
+        .item-header{
+            font-size: 17px;
+            font-family: $FBB;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .item-txt{
+            font-size: 15px;
+            color: white;
+        }
+
+    }
+    
+}
+
+
+.service-btn{
+    display: flex;
+    justify-content: center;
+
+    .aFixx{
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255);
+        background-color: rgba(58, 54, 55, 0);
+        width: 191px;
+        height: 52px;
+
+        font-size: 15px;
+        font-family: $FB;
+          
+
+        &:hover{
+            background-color: #f8736a;
+            border-color: #f8736a;
+        }
+    }
+}

@@ -58,7 +58,14 @@ a:focus, a:hover {
 }
 
 
+.section-header{
+    text-align: center;
+    font-size: 24px;
+    font-family: $FBB;
+    color: white;
 
+    margin-bottom: 45px;
+}
 
 
 .patrnBack-show{
@@ -75,7 +82,7 @@ a:focus, a:hover {
        background-image: url('../images/pattren.png');
        
        transition: all 0.5s ease;
-       animation: testmove 100s infinite;
+       animation: testmove 20s infinite;
     }
  }
 

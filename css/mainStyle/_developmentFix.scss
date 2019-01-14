@@ -1,8 +1,19 @@
 
 
+.development-section.patrnBack-show::before{
+    background-image: url('../images/pattren5.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 .development-section{
     padding-top: 90px;
     padding-bottom: 90px;
+
+    .container{
+        z-index: 5;
+        position: relative;
+    }
 }
 
 
