@@ -8,12 +8,16 @@ body {
 * {
   outline: none; }
 
-/* line 18, mainStyle/_helpers.scss */
+/* line 17, mainStyle/_helpers.scss */
+button.aFixx {
+  padding: 0; }
+
+/* line 21, mainStyle/_helpers.scss */
 a:focus, a:hover {
   text-decoration: none;
   color: white; }
 
-/* line 23, mainStyle/_helpers.scss */
+/* line 26, mainStyle/_helpers.scss */
 .aFixx {
   transition: all 0.5s ease;
   display: flex;
@@ -24,14 +28,14 @@ a:focus, a:hover {
   border: 0;
   box-shadow: none; }
 
-/* line 40, mainStyle/_helpers.scss */
+/* line 43, mainStyle/_helpers.scss */
 .owl-dots {
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: 0px;
   width: 100%; }
-  /* line 46, mainStyle/_helpers.scss */
+  /* line 49, mainStyle/_helpers.scss */
   .owl-dots .owl-dot {
     background-color: black !important;
     width: 10px;
@@ -39,12 +43,12 @@ a:focus, a:hover {
     border-radius: 50%;
     margin: 5px;
     opacity: 0.5; }
-  /* line 54, mainStyle/_helpers.scss */
+  /* line 57, mainStyle/_helpers.scss */
   .owl-dots .owl-dot.active {
     opacity: 1;
     background-color: black !important; }
 
-/* line 61, mainStyle/_helpers.scss */
+/* line 64, mainStyle/_helpers.scss */
 .section-header {
   text-align: center;
   font-size: 24px;
@@ -52,11 +56,11 @@ a:focus, a:hover {
   color: white;
   margin-bottom: 45px; }
 
-/* line 71, mainStyle/_helpers.scss */
+/* line 74, mainStyle/_helpers.scss */
 .patrnBack-show {
   position: relative;
   overflow: hidden; }
-  /* line 74, mainStyle/_helpers.scss */
+  /* line 77, mainStyle/_helpers.scss */
   .patrnBack-show::before {
     position: absolute;
     top: 0;
@@ -76,6 +80,21 @@ a:focus, a:hover {
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
+/* line 114, mainStyle/_helpers.scss */
+.langBtn {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 5; }
+  /* line 120, mainStyle/_helpers.scss */
+  .langBtn .aFixx {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #f8736a;
+    border-left: 0;
+    border-top-right-radius: 17.5px;
+    border-bottom-right-radius: 17.5px; }
+
 /* line 1, mainStyle/_headerFix.scss */
 .header-section {
   background-image: url("../images/1.jpg");
@@ -175,11 +194,11 @@ a:focus, a:hover {
 /* line 49, mainStyle/_sideNav.scss */
 .top-nav .left-links.xs-NavFix {
   position: fixed;
-  width: 220px;
+  width: 80vw;
   background-color: white;
   transition: all 0.5s ease;
   top: 0;
-  right: -220px;
+  right: -80vw;
   bottom: 0;
   padding-top: 50px; }
   /* line 62, mainStyle/_sideNav.scss */
@@ -213,7 +232,11 @@ a:focus, a:hover {
   right: 0 !important;
   z-index: 9 !important; }
 
-/* line 103, mainStyle/_sideNav.scss */
+/* line 104, mainStyle/_sideNav.scss */
+.overOpendBody {
+  overflow: hidden; }
+
+/* line 107, mainStyle/_sideNav.scss */
 .overOpend {
   transition: all 0.5s ease;
   position: fixed;
@@ -638,9 +661,10 @@ a:focus, a:hover {
     /* line 33, mainStyle/_footerFixx.scss */
     .footer-section .social-txt span {
       display: flex;
+      align-items: center;
       margin-right: 2.5px;
       margin-left: 2.5px; }
-      /* line 39, mainStyle/_footerFixx.scss */
+      /* line 40, mainStyle/_footerFixx.scss */
       .footer-section .social-txt span .aFixx {
         margin-right: 2.5px;
         margin-left: 2.5px; }
@@ -881,53 +905,54 @@ a:focus, a:hover {
 @media only screen and (max-width: 480px) {
   /* line 24, mainStyle/_mediaFixx.scss */
   .top-nav {
-    flex-direction: row-reverse; }
+    padding-right: 20px;
+    padding-left: 20px; }
 
-  /* line 27, mainStyle/_mediaFixx.scss */
+  /* line 28, mainStyle/_mediaFixx.scss */
   .header-centerLogo span {
     font-size: 24px; }
 
-  /* line 32, mainStyle/_mediaFixx.scss */
+  /* line 33, mainStyle/_mediaFixx.scss */
   .social-section .contrFixx, .social-section .social-btns {
     flex-direction: column; }
 
-  /* line 36, mainStyle/_mediaFixx.scss */
+  /* line 37, mainStyle/_mediaFixx.scss */
   .social-section .right-section, .social-section .left-section,
   .social-section .social-btns .right-btn, .social-section .social-btns .left-btn {
     align-items: center;
-    margin: 0;
+    margin: 0 !important;
     justify-content: center; }
 
-  /* line 42, mainStyle/_mediaFixx.scss */
+  /* line 43, mainStyle/_mediaFixx.scss */
   .social-section .social-btns .aFixx {
     margin-bottom: 25px; }
 
-  /* line 46, mainStyle/_mediaFixx.scss */
+  /* line 47, mainStyle/_mediaFixx.scss */
   .social-section .social-item {
     width: 90vw; }
 
-  /* line 50, mainStyle/_mediaFixx.scss */
+  /* line 51, mainStyle/_mediaFixx.scss */
   .footer-section .social-txt {
     flex-direction: column;
     align-items: center; }
 
-  /* line 56, mainStyle/_mediaFixx.scss */
+  /* line 57, mainStyle/_mediaFixx.scss */
   .inputModal-fixx .fileInputFixx {
     justify-content: flex-end; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /* line 68, mainStyle/_mediaFixx.scss */
+  /* line 69, mainStyle/_mediaFixx.scss */
   .header-centerLogo span {
     font-size: 20px; }
 
-  /* line 73, mainStyle/_mediaFixx.scss */
+  /* line 74, mainStyle/_mediaFixx.scss */
   .service-item {
     flex-direction: column;
     align-items: center; }
-    /* line 77, mainStyle/_mediaFixx.scss */
+    /* line 78, mainStyle/_mediaFixx.scss */
     .service-item .item-img {
       margin: 0; }
-    /* line 79, mainStyle/_mediaFixx.scss */
+    /* line 80, mainStyle/_mediaFixx.scss */
     .service-item .item-info .item-header, .service-item .item-info .item-txt {
       text-align: center; } }
 

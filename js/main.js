@@ -5,6 +5,10 @@
 
 // directions ready
 $(document).ready(function() {
+
+    setTimeout(() => {
+        
+    
     
     $(".dirBtnTo-index").click(function() {
         $('html, body').animate({
@@ -43,7 +47,7 @@ $(document).ready(function() {
     });
 
 
-
+}, 10);
 
 });
 
@@ -53,11 +57,13 @@ $(document).ready(function() {
 function openSideNav(){
     $('.left-links.xs-NavFix').addClass('sideOPend');
     $('.dvOverBlack').addClass('overOpend');
+    $('body').addClass('overOpendBody');
 }
 
 function closeSideNav(){
     $('.left-links.xs-NavFix').removeClass('sideOPend');
     $('.dvOverBlack').removeClass('overOpend');
+    $('body').removeClass('overOpendBody');
 
 }
 

@@ -1,0 +1,66 @@
+.vission-section , .message-section{
+  transform: scale(-1);
+}
+
+.vission-section .container , .message-section .container{
+  transform: scale(-1);
+}
+
+.social-section .social-btns .left-btn {
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+.social-section .social-btns .right-btn {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+.selectModal-fixx .filter-option-inner:before{
+  left: unset;
+  right: 13px;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+  text-align: left;
+}
+
+.service-item .item-img{
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+
+.top-nav .left-links.xs-NavFix{
+  right: unset;
+  left: -80vw;
+}
+
+.sideOPend {
+  left: 0 !important;
+  right: unset !important;
+}
+
+.closeNavBtnSvg {
+  right: 30px;
+  left: unset;
+}
+
+.langBtn {
+  left: unset;
+  right: 0;
+}
+
+.langBtn .aFixx {
+  border-left: 1px;
+  border-right: 0;
+  border-top-left-radius: 17.5px;
+  border-bottom-left-radius: 17.5px;
+  
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
+.langBtn .aFixx span{
+  padding-bottom: 5px;
+  padding-left: 5px;
+}

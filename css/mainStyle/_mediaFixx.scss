@@ -22,7 +22,8 @@
 @media only screen and (max-width : 480px) {
 
     .top-nav{
-        flex-direction: row-reverse;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .header-centerLogo span {
         font-size: 24px;
@@ -36,7 +37,7 @@
     .social-section .right-section , .social-section .left-section,
     .social-section .social-btns .right-btn , .social-section .social-btns .left-btn{
         align-items: center;
-        margin: 0;
+        margin: 0!important;
         justify-content: center;
     }
     .social-section .social-btns .aFixx{

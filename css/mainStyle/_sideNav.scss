@@ -48,13 +48,13 @@
 .top-nav{
     .left-links.xs-NavFix{
         position: fixed;
-        width: 220px;
+        width: 80vw;
         background-color: white;
 
         transition: all 0.5s ease;
         
         top: 0;
-        right: -220px;
+        right: -80vw;
         bottom: 0;
 
         padding-top: 50px;
@@ -99,6 +99,10 @@
 .sideOPend{
     right: 0!important;
     z-index: 9!important;
+}
+
+.overOpendBody{
+    overflow: hidden;
 }
 .overOpend{
     transition: all 0.5s ease;
