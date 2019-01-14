@@ -1,0 +1,46 @@
+
+
+.development-section{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+.development-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .itemHeader{
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+       
+        h3{
+            font-size: 18px;
+            font-family: $FBB;
+            max-width: 285px;
+
+        }
+
+        &:before{
+            position: absolute;
+            content: '';
+            background-color: rgb(58, 54, 55);
+            width: 50px;
+            height: 2px;
+            bottom: -25px;
+
+            right: 42%;
+        }
+    }
+
+    .itemInfo{
+        font-size: 15px;
+        font-family: $FR;
+        max-width: 340px;
+        text-align: center;
+        p{margin: 0;}
+    }
+}

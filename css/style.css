@@ -238,7 +238,7 @@ a:focus, a:hover {
     color: white; }
     /* line 27, mainStyle/_vissionFix.scss */
     .vission-section .vission-info h3 {
-      font-family: "Frutiger-Bold";
+      font-family: "Frutiger-Black";
       font-size: 24px; }
     /* line 31, mainStyle/_vissionFix.scss */
     .vission-section .vission-info p {
@@ -269,7 +269,7 @@ a:focus, a:hover {
     z-index: 3; }
     /* line 25, mainStyle/_messageFix.scss */
     .message-section .message-info h3 {
-      font-family: "Frutiger-Bold";
+      font-family: "Frutiger-Black";
       font-size: 24px;
       color: #14c7b8; }
     /* line 30, mainStyle/_messageFix.scss */
@@ -304,7 +304,7 @@ a:focus, a:hover {
     z-index: 3; }
     /* line 26, mainStyle/_phylsf.scss */
     .phylsf-section .phylsf-info h3 {
-      font-family: "Frutiger-Bold";
+      font-family: "Frutiger-Black";
       font-size: 24px;
       color: white; }
     /* line 31, mainStyle/_phylsf.scss */
@@ -316,5 +316,45 @@ a:focus, a:hover {
       color: white;
       max-width: 600px;
       text-align: justify; }
+
+/* line 3, mainStyle/_developmentFix.scss */
+.development-section {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+/* line 9, mainStyle/_developmentFix.scss */
+.development-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px; }
+  /* line 15, mainStyle/_developmentFix.scss */
+  .development-item .itemHeader {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative; }
+    /* line 20, mainStyle/_developmentFix.scss */
+    .development-item .itemHeader h3 {
+      font-size: 18px;
+      font-family: "Frutiger-Black";
+      max-width: 285px; }
+    /* line 27, mainStyle/_developmentFix.scss */
+    .development-item .itemHeader:before {
+      position: absolute;
+      content: '';
+      background-color: #3a3637;
+      width: 50px;
+      height: 2px;
+      bottom: -25px;
+      right: 42%; }
+  /* line 39, mainStyle/_developmentFix.scss */
+  .development-item .itemInfo {
+    font-size: 15px;
+    font-family: "Frutiger-Roman";
+    max-width: 340px;
+    text-align: center; }
+    /* line 44, mainStyle/_developmentFix.scss */
+    .development-item .itemInfo p {
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
