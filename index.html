@@ -14,6 +14,8 @@
     <link href="css/hover-min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
 
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -36,7 +38,7 @@
                         <li><a href="#!" class="aFixx dirBtnTo-studios">الاستوديوهات</a></li>
                         <li><a href="#!" class="aFixx dirBtnTo-social">حصافة و المجتمع</a></li>
                         <li><a href="#!" class="aFixx dirBtnTo-ourService">خدماتنا</a></li>
-                        <li><a href="#!" class="aFixx">انضم لنا</a></li>
+                        <li><button data-toggle="modal" data-target="#joinUsModal" class="aFixx">انضم لنا</button></li>
                     </ul>
                 </div>
 
@@ -61,12 +63,12 @@
                     </a>
 
                     <ul>
-                        <li><a href="#!" class="aFixx dirBtnTo-index">حصافة</a></li>
-                        <li><a href="#!" class="aFixx dirBtnTo-development">التفكير التصميمي</a></li>
-                        <li><a href="#!" class="aFixx dirBtnTo-studios">الاستوديوهات</a></li>
-                        <li><a href="#!" class="aFixx dirBtnTo-social">حصافة و المجتمع</a></li>
-                        <li><a href="#!" class="aFixx dirBtnTo-ourService">خدماتنا</a></li>
-                        <li><a href="#!" class="aFixx">انضم لنا</a></li>
+                        <li><a href="#!" class="aFixx dirBtnTo-index" onclick="closeSideNav()">حصافة</a></li>
+                        <li><a href="#!" class="aFixx dirBtnTo-development" onclick="closeSideNav()">التفكير التصميمي</a></li>
+                        <li><a href="#!" class="aFixx dirBtnTo-studios" onclick="closeSideNav()">الاستوديوهات</a></li>
+                        <li><a href="#!" class="aFixx dirBtnTo-social" onclick="closeSideNav()">حصافة و المجتمع</a></li>
+                        <li><a href="#!" class="aFixx dirBtnTo-ourService" onclick="closeSideNav()">خدماتنا</a></li>
+                        <li><button data-toggle="modal" data-target="#joinUsModal" class="aFixx" onclick="closeSideNav()">انضم لنا</button></li>
                     </ul>
                 </div>
             </div>
@@ -213,7 +215,7 @@
                         
                         <div class="item-header">
                             <div class="header-img"><img src="images/icon1.png" alt="img"></div>
-                            <div class="header-txt"><a href="#!" class="aFixx"><span>الفنون والحرف</span></a></div>
+                            <div class="header-txt"><button data-toggle="modal" data-target="#studioModal" class="aFixx"><span>الفنون والحرف</span></button></div>
                         </div>
     
                         <div class="item-data">
@@ -221,9 +223,9 @@
                         </div>
 
                         <div class="seeBtn">
-                            <a href="#!" class="aFixx">
+                            <button data-toggle="modal" data-target="#studioModal" class="aFixx">
                                 <img src="images/plsVctr.png" alt="img">
-                            </a>
+                            </button>
                         </div>
     
                     </div>
@@ -235,7 +237,7 @@
                         
                         <div class="item-header">
                             <div class="header-img"><img src="images/icon2.png" alt="img"></div>
-                            <div class="header-txt"><a href="#!" class="aFixx"><span>العمارة وتصميم البيئة</span></a></div>
+                            <div class="header-txt"><button data-toggle="modal" data-target="#studioModal" class="aFixx"><span>العمارة وتصميم البيئة</span></button></div>
                         </div>
     
                         <div class="item-data">
@@ -243,9 +245,9 @@
                         </div>
 
                          <div class="seeBtn">
-                            <a href="#!" class="aFixx">
+                            <button data-toggle="modal" data-target="#studioModal" class="aFixx">
                                 <img src="images/plsVctr.png" alt="img">
-                            </a>
+                            </button>
                         </div>
     
                     </div>
@@ -257,7 +259,7 @@
                         
                         <div class="item-header">
                             <div class="header-img"><img src="images/icon3.png" alt="img"></div>
-                            <div class="header-txt"><a href="#!" class="aFixx"><span>التصميم الرقمي والجرافيك</span></a></div>
+                            <div class="header-txt"><button data-toggle="modal" data-target="#studioModal" class="aFixx"><span>التصميم الرقمي والجرافيك</span></button></div>
                         </div>
     
                         <div class="item-data">
@@ -265,9 +267,9 @@
                         </div>
 
                          <div class="seeBtn">
-                            <a href="#!" class="aFixx">
-                                <img src="images/plsVctr.png" alt="img">
-                            </a>
+                            <button data-toggle="modal" data-target="#studioModal" class="aFixx">
+                                    <img src="images/plsVctr.png" alt="img">
+                            </button>
                         </div>
     
                     </div>
@@ -279,7 +281,7 @@
                         
                         <div class="item-header">
                             <div class="header-img"><img src="images/icon4.png" alt="img"></div>
-                            <div class="header-txt"><a href="#!" class="aFixx"><span>التسويق</span></a></div>
+                            <div class="header-txt"><button data-toggle="modal" data-target="#studioModal" class="aFixx"><span>التسويق</span></button></div>
                         </div>
     
                         <div class="item-data">
@@ -287,9 +289,9 @@
                         </div>
 
                          <div class="seeBtn">
-                            <a href="#!" class="aFixx">
+                            <button data-toggle="modal" data-target="#studioModal" class="aFixx">
                                 <img src="images/plsVctr.png" alt="img">
-                            </a>
+                            </button>
                         </div>
     
                     </div>
@@ -351,8 +353,9 @@
 
             <!-- buttons section -->
             <div class="social-btns">
-                <div class="right-btn"><a href="#!" class="aFixx"><span>لمعرفة المزيد</span></a></div>
-                <div class="left-btn"><a href="#!" class="aFixx"><span>للمشاركة</span></a></div>
+                <div class="right-btn"><button href="#!" class="aFixx" data-toggle="modal" data-target="#hasafahSociety-more"><span>لمعرفة المزيد</span></button></div>
+                
+                <div class="left-btn"><button class="aFixx" data-toggle="modal" data-target="#hasafahSociety-add"><span>للمشاركة</span></button></div>
             </div>
 
         </div>
@@ -499,7 +502,7 @@
 
                 <div class="col-xs-12">
                     <div class="service-btn">
-                        <a href="#!" class="aFixx"><span>طلب خدمة</span></a>
+                        <button data-target="#services-ask" data-toggle="modal" class="aFixx"><span>طلب خدمة</span></button>
                     </div>
                 </div>
 
@@ -534,12 +537,337 @@
 
 
 
+    <section class="allModales-section">
+
+        <!-- join us Modal -->
+        <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="aFixx closeBtnFixx" data-dismiss="modal" aria-label="Close">
+                            <img src="images/closeIcon.png" alt="icon">
+                        </button>
+
+                        <section class="joinUs-modal">
+
+                            <div class="model-header">
+                                <h5 class="main-header">انضم إلينا</h5>
+                                <h5 class="sub-header">فضلًا ملئ هذه الإستمارة وإرسالها</h5>
+                            </div>
+                            
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    الاسم بالكامل
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+                            
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    البريد الإلكتروني
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    رقم الجوال
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+
+                            <!-- file input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    السيرة الذاتية
+                                    <span>*</span>
+                                </h5>
+
+                                <input type="file" id="joinUsFile" style="display: none;">
+                                <div class="fileInputFixx" onclick="inputFileFixx()">
+                                    <span class="plcHldr-Txt hidden-xs">PDF فضلًا ارفق الملف بصيغة</span>
+                                    <span class="plcHldr-Btn">رفع ملف</span>
+                                </div>
+                            </div>
+
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    تفاصيل عامة
+                                    <span>*</span>
+                                </h5>
+                                <textarea rows="7"></textarea>
+                            </div>
+
+                            <div class="btnModal-fixx">
+                                <button class="aFixx"><span>إرسال</span></button>
+                            </div>
+
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- studio Modal -->
+        <div class="modal fade" id="studioModal" tabindex="-1" role="dialog" aria-labelledby="studioModal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="aFixx closeBtnFixx" data-dismiss="modal" aria-label="Close">
+                            <img src="images/closeIcon.png" alt="icon">
+                        </button>
+
+                        <section class="studio-modal">
+
+                            <div class="item-header">
+                                <span>التصميم الرقمي والجرافيك</span>
+                            </div>
+        
+                            <div class="item-data">
+                                <p>
+                                    خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم. قام البروفيسور "ريتشارد ماك لينتوك" (Richard McClintock) وهو بروفيسور اللغة اللاتينية في جامعة هامبدن-سيدني في فيرجينيا بالبحث عن أصول كلمة لاتينية غامضة في نص لوريم إيبسوم وهي "consectetur"، وخلال تتبعه لهذه الكلمة في الأدب اللاتيني اكتشف المصدر الغير قابل للشك. فلقد اتضح أن كلمات نص لوريم إيبسوم تأتي من الأقسام 1.10.32 و 1.10.33 من كتاب "حول أقاصي الخير والشر" (de Finibus Bonorum et Malorum) للمفكر شيشيرون (Cicero) والذي كتبه في عام 45 قبل الميلاد. هذا الكتاب هو بمثابة مقالة علمية مطولة في نظرية الأخلاق، وكان له شعبية كبيرة في عصر النهضة. السطر الأول من لوريم إيبسوم "Lorem ipsum dolor sit amet.." يأتي من سطر في القسم 1.20.32 من هذا الكتاب
+                                </p>
+                            </div>
+
+                        </section>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- hasafah society add Modal -->
+        <div class="modal fade" id="hasafahSociety-add" tabindex="-1" role="dialog" aria-labelledby="hasafahSociety-add">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="aFixx closeBtnFixx" data-dismiss="modal" aria-label="Close">
+                            <img src="images/closeIcon.png" alt="icon">
+                        </button>
+
+                        <section class="joinUs-modal">
+
+                            <div class="model-header">
+                                <h5 class="main-header">للمشاركة في الخدمة الإجتماعية</h5>
+                                <h5 class="sub-header">فضلًا ملئ هذه الإستمارة وإرسالها</h5>
+                            </div>
+                            
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    الاسم بالكامل
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+                            
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    البريد الإلكتروني
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    رقم الجوال
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    تفاصيل عامة
+                                    <span>*</span>
+                                </h5>
+                                <textarea rows="7"></textarea>
+                            </div>
+
+                            <div class="btnModal-fixx">
+                                <button class="aFixx"><span>إرسال</span></button>
+                            </div>
+
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- services order Modal -->
+        <div class="modal fade" id="services-ask" tabindex="-1" role="dialog" aria-labelledby="services-ask">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="aFixx closeBtnFixx" data-dismiss="modal" aria-label="Close">
+                            <img src="images/closeIcon.png" alt="icon">
+                        </button>
+
+                        <section class="joinUs-modal">
+
+                            <div class="model-header">
+                                <h5 class="main-header">طلب خدمة</h5>
+                                <h5 class="sub-header">فضلًا ملئ هذه الإستمارة وإرسالها</h5>
+                            </div>
+                            
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    الاسم بالكامل
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+                            
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    البريد الإلكتروني
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    رقم الجوال
+                                    <span>*</span>
+                                </h5>
+                                <input type="text">
+                            </div>
+
+                            <!-- select -->
+                            <div class="selectModal-fixx">
+                                <h5 class="inpt-header">
+                                    نوع الخدمة
+                                    <span>*</span>
+                                </h5>
+
+                                <select data-dropup-auto="false" class="selectpicker">
+                                    <option>عنوان خدمة 1</option>
+                                    <option>عنوان خدمة 2</option>
+                                    <option>عنوان خدمة 3</option>
+                                </select>
+                                      
+                            </div>
+
+                            <!-- input -->
+                            <div class="inputModal-fixx">
+                                <h5 class="inpt-header">
+                                    تفاصيل عامة
+                                    <span>*</span>
+                                </h5>
+                                <textarea rows="7"></textarea>
+                            </div>
+
+                            <div class="btnModal-fixx">
+                                <button class="aFixx"><span>إرسال</span></button>
+                            </div>
+
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- hasafah society see more Modal -->
+        <div class="modal fade" id="hasafahSociety-more" tabindex="-1" role="dialog" aria-labelledby="hasafahSociety-more">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="aFixx closeBtnFixx" data-dismiss="modal" aria-label="Close">
+                            <img src="images/closeIcon.png" alt="icon">
+                        </button>
+
+                        <div class="model-header">
+                            <h5 class="main-header">حصافة والمجتمع</h5>
+                        </div>
+
+
+                        <section class="hasafahSociety-more">
+
+
+                            <div class="social-imgs">
+                                
+                                <div class="social-item">
+                                    <div class="item-img"><img src="images/icon5.png" alt="img"></div>
+                                    <div class="item-txt"><span>التعليم والتدريب</span></div>
+                                </div>
+                                
+                                <div class="social-item">
+                                    <div class="item-img"><img src="images/icon6.png" alt="img"></div>
+                                    <div class="item-txt"><span>التوعية والتثقيف</span></div>
+                                </div>
+                                
+                                <div class="social-item">
+                                    <div class="item-img"><img src="images/icon7.png" alt="img"></div>
+                                    <div class="item-txt"><span>الفعاليات والتطوع</span></div>
+                                </div>
+                                
+                                <div class="social-item">
+                                    <div class="item-img"><img src="images/icon8.png" alt="img"></div>
+                                    <div class="item-txt"><span>حاضنات الإبداع</span></div>
+                                </div>
+
+                            </div>
+
+                            <div class="social-txt">
+                                <p>
+                                    خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم. قام البروفيسور "ريتشارد ماك لينتوك" (Richard McClintock) وهو بروفيسور اللغة اللاتينية في جامعة هامبدن-سيدني في فيرجينيا بالبحث عن أصول كلمة لاتينية غامضة في نص لوريم إيبسوم وهي "consectetur"، وخلال تتبعه لهذه الكلمة في الأدب اللاتيني اكتشف المصدر الغير قابل للشك. فلقد اتضح أن كلمات نص لوريم إيبسوم تأتي من الأقسام 1.10.32 و 1.10.33 من كتاب "حول أقاصي الخير والشر" (de Finibus Bonorum et Malorum) للمفكر شيشيرون (Cicero) والذي كتبه في عام 45 قبل الميلاد. هذا الكتاب هو بمثابة مقالة علمية مطولة في نظرية الأخلاق، وكان له شعبية كبيرة في عصر النهضة. السطر الأول من لوريم إيبسوم "Lorem ipsum dolor sit amet.." يأتي من سطر في القسم 1.20.32 من هذا الكتاب
+                                </p>
+                            </div>
+                        </section>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
 
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

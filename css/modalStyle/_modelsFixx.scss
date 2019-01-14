@@ -1,0 +1,85 @@
+.studio-modal{
+
+    .item-header{
+        font-size: 16px;
+        font-family: $FBB;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+
+        &:before{
+            transition: all 0.5s ease;
+            position: absolute;
+            content: '';
+            background-color: #3a3637;
+            width: 50px;
+            height: 2px;
+            bottom: 0px;
+            right: 50%;
+            transform: translate(50%);
+        }
+    }
+
+    .item-data{
+        font-size: 16px;
+        text-align: justify;
+    }
+    
+}
+
+
+
+
+
+#hasafahSociety-more{
+    .modal-dialog.modal-lg {
+        width: 84vw;
+        max-width: unset;
+    }
+    
+    .model-header{
+        margin-bottom: 25px;
+    }
+}
+.hasafahSociety-more{
+
+        
+
+    .social-imgs{
+        display: flex;
+        justify-content: space-between;
+   
+        .social-item {
+            background-color: white;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+            width: 250px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+    
+            .item-img {
+                margin-bottom: 20px;
+            }
+    
+            .item-txt {
+                font-size: 16px;
+                font-family: $FBB;
+                pointer-events: none;
+            }
+        }
+    }
+
+
+    .social-txt{
+        p{
+            margin-bottom: 50px;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+}

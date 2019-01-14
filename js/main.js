@@ -1,3 +1,9 @@
+
+
+
+
+
+// directions ready
 $(document).ready(function() {
     
     $(".dirBtnTo-index").click(function() {
@@ -53,4 +59,9 @@ function closeSideNav(){
     $('.left-links.xs-NavFix').removeClass('sideOPend');
     $('.dvOverBlack').removeClass('overOpend');
 
+}
+
+
+function inputFileFixx(){
+    $('#joinUsFile').click();
 }

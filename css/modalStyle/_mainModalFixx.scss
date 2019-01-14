@@ -1,0 +1,221 @@
+.modal-dialog.modal-lg {
+    max-width: 777px;
+}
+
+.modal-content{
+    overflow: hidden;
+    border-radius: 0;
+
+}
+
+.modal-body{
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    padding-right: 50px;
+    padding-left: 50px;
+
+    position: relative;
+
+
+
+    .closeBtnFixx{
+        width: 34px;
+        height: 34px;
+        background-color: #f2f2f2;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &:hover{
+            background-color: #f8736a;
+        }
+    }
+}
+
+.model-header{
+    text-align: center;
+    margin-bottom: 20px;
+
+    .main-header{
+        font-size: 24px;
+        font-family: $FBB;
+        margin-bottom: 10px;
+    }
+    
+    .sub-header{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+
+
+.inputModal-fixx{
+    margin-bottom: 20px;
+
+    .inpt-header{
+        font-size: 15px;
+        font-family: $FB;
+    
+        span{
+            color: red;
+        }
+    }
+    
+    input , textarea{
+        width: 100%;
+        background-color: #fafafa;
+        min-height: 57px;
+    
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(237, 237, 237);
+
+        padding-right: 30px;
+        padding-left: 30px;
+          
+    }
+
+    .fileInputFixx{
+        width: 100%;
+        background-color: #fafafa;
+        min-height: 57px;
+    
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(237, 237, 237);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        cursor: pointer;
+
+        .plcHldr-Txt{
+            font-size: 15px;
+            color: #a3a3a3;
+            margin-right: 30px;
+            margin-left: 30px;
+
+        }
+        
+        .plcHldr-Btn{
+            font-size: 15px;
+            color: #a3a3a3;
+            font-family: $FB;
+            margin-right: 10px;
+            margin-left: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: rgb(232, 232, 232);
+            width: 119px;
+            height: 40px;
+              
+        }
+          
+    }
+
+
+    
+}
+
+
+
+
+.btnModal-fixx{
+    .aFixx{
+        
+        width: 100%;
+        background-color: rgb(248, 115, 106);
+        height: 57px;
+        font-size: 15px;
+        font-family: $FB;
+
+        &:hover{
+            background-color: #f8556a;
+        }
+    }
+}
+
+
+
+.selectModal-fixx{
+
+    
+    * , *:focus , *:active , button.btn.dropdown-toggle.btn-default:focus{
+        outline: none!important;
+        box-shadow: none!important;
+    }
+
+    .inpt-header{
+        font-size: 15px!important;
+        font-family: $FB!important;
+    
+        span{
+            color: red!important;
+        }
+    }
+
+
+
+    .dropdown.bootstrap-select{
+        width: 100%!important;
+        margin-bottom: 20px!important;
+        min-height: 57px!important;
+    }
+
+    
+
+    button.btn.dropdown-toggle.btn-default{
+        min-height: 57px!important;
+        background-color: #fafafa!important;
+        border-style: solid!important;
+        border-width: 1px!important;
+        border-color: rgb(237, 237, 237)!important;
+
+    }
+    .dropdown-menu.open{
+        min-width: 100%!important;
+    }
+    .filter-option{
+        display: flex!important;
+        align-items: center!important;
+    }
+
+    button.btn.dropdown-toggle.btn-default:hover{
+        background-color: #fafafa!important;
+    }
+
+    .filter-option-inner-inner {
+        font-size: 15px!important;
+        color: #a3a3a3!important;
+    }
+
+    span.bs-caret{
+        span.caret{display: none!important}
+    }
+
+    .filter-option-inner{
+        position: relative;
+        width: 100%;
+        text-align: right;
+
+        &:before{
+            position: absolute;
+            content: '\f078';
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            left: 13px;
+            font-size: 11px;
+            color: #a3a3a3;
+            top: 5px;
+        }
+    }
+
+}

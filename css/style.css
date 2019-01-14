@@ -423,7 +423,7 @@ a:focus, a:hover {
       font-family: "Frutiger-Black";
       color: black;
       position: relative;
-      height: 40px;
+      padding-bottom: 20px;
       align-items: baseline;
       margin-bottom: 20px; }
       /* line 54, mainStyle/_studioFix.scss */
@@ -645,6 +645,228 @@ a:focus, a:hover {
         margin-right: 2.5px;
         margin-left: 2.5px; }
 
+/* line 1, modalStyle/_mainModalFixx.scss */
+.modal-dialog.modal-lg {
+  max-width: 777px; }
+
+/* line 5, modalStyle/_mainModalFixx.scss */
+.modal-content {
+  overflow: hidden;
+  border-radius: 0; }
+
+/* line 11, modalStyle/_mainModalFixx.scss */
+.modal-body {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
+  position: relative; }
+  /* line 22, modalStyle/_mainModalFixx.scss */
+  .modal-body .closeBtnFixx {
+    width: 34px;
+    height: 34px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    /* line 31, modalStyle/_mainModalFixx.scss */
+    .modal-body .closeBtnFixx:hover {
+      background-color: #f8736a; }
+
+/* line 37, modalStyle/_mainModalFixx.scss */
+.model-header {
+  text-align: center;
+  margin-bottom: 20px; }
+  /* line 41, modalStyle/_mainModalFixx.scss */
+  .model-header .main-header {
+    font-size: 24px;
+    font-family: "Frutiger-Black";
+    margin-bottom: 10px; }
+  /* line 47, modalStyle/_mainModalFixx.scss */
+  .model-header .sub-header {
+    font-size: 16px;
+    margin-bottom: 10px; }
+
+/* line 56, modalStyle/_mainModalFixx.scss */
+.inputModal-fixx {
+  margin-bottom: 20px; }
+  /* line 59, modalStyle/_mainModalFixx.scss */
+  .inputModal-fixx .inpt-header {
+    font-size: 15px;
+    font-family: "Frutiger-Bold"; }
+    /* line 63, modalStyle/_mainModalFixx.scss */
+    .inputModal-fixx .inpt-header span {
+      color: red; }
+  /* line 68, modalStyle/_mainModalFixx.scss */
+  .inputModal-fixx input, .inputModal-fixx textarea {
+    width: 100%;
+    background-color: #fafafa;
+    min-height: 57px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ededed;
+    padding-right: 30px;
+    padding-left: 30px; }
+  /* line 82, modalStyle/_mainModalFixx.scss */
+  .inputModal-fixx .fileInputFixx {
+    width: 100%;
+    background-color: #fafafa;
+    min-height: 57px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; }
+    /* line 97, modalStyle/_mainModalFixx.scss */
+    .inputModal-fixx .fileInputFixx .plcHldr-Txt {
+      font-size: 15px;
+      color: #a3a3a3;
+      margin-right: 30px;
+      margin-left: 30px; }
+    /* line 105, modalStyle/_mainModalFixx.scss */
+    .inputModal-fixx .fileInputFixx .plcHldr-Btn {
+      font-size: 15px;
+      color: #a3a3a3;
+      font-family: "Frutiger-Bold";
+      margin-right: 10px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e8e8e8;
+      width: 119px;
+      height: 40px; }
+
+/* line 132, modalStyle/_mainModalFixx.scss */
+.btnModal-fixx .aFixx {
+  width: 100%;
+  background-color: #f8736a;
+  height: 57px;
+  font-size: 15px;
+  font-family: "Frutiger-Bold"; }
+  /* line 140, modalStyle/_mainModalFixx.scss */
+  .btnModal-fixx .aFixx:hover {
+    background-color: #f8556a; }
+
+/* line 151, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx *, .selectModal-fixx *:focus, .selectModal-fixx *:active, .selectModal-fixx button.btn.dropdown-toggle.btn-default:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+/* line 156, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx .inpt-header {
+  font-size: 15px !important;
+  font-family: "Frutiger-Bold" !important; }
+  /* line 160, modalStyle/_mainModalFixx.scss */
+  .selectModal-fixx .inpt-header span {
+    color: red !important; }
+/* line 167, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx .dropdown.bootstrap-select {
+  width: 100% !important;
+  margin-bottom: 20px !important;
+  min-height: 57px !important; }
+/* line 175, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx button.btn.dropdown-toggle.btn-default {
+  min-height: 57px !important;
+  background-color: #fafafa !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: #ededed !important; }
+/* line 183, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx .dropdown-menu.open {
+  min-width: 100% !important; }
+/* line 186, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx .filter-option {
+  display: flex !important;
+  align-items: center !important; }
+/* line 191, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx button.btn.dropdown-toggle.btn-default:hover {
+  background-color: #fafafa !important; }
+/* line 195, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx .filter-option-inner-inner {
+  font-size: 15px !important;
+  color: #a3a3a3 !important; }
+/* line 201, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx span.bs-caret span.caret {
+  display: none !important; }
+/* line 204, modalStyle/_mainModalFixx.scss */
+.selectModal-fixx .filter-option-inner {
+  position: relative;
+  width: 100%;
+  text-align: right; }
+  /* line 209, modalStyle/_mainModalFixx.scss */
+  .selectModal-fixx .filter-option-inner:before {
+    position: absolute;
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 13px;
+    font-size: 11px;
+    color: #a3a3a3;
+    top: 5px; }
+
+/* line 3, modalStyle/_modelsFixx.scss */
+.studio-modal .item-header {
+  font-size: 16px;
+  font-family: "Frutiger-Black";
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px; }
+  /* line 11, modalStyle/_modelsFixx.scss */
+  .studio-modal .item-header:before {
+    transition: all 0.5s ease;
+    position: absolute;
+    content: '';
+    background-color: #3a3637;
+    width: 50px;
+    height: 2px;
+    bottom: 0px;
+    right: 50%;
+    transform: translate(50%); }
+/* line 24, modalStyle/_modelsFixx.scss */
+.studio-modal .item-data {
+  font-size: 16px;
+  text-align: justify; }
+
+/* line 36, modalStyle/_modelsFixx.scss */
+#hasafahSociety-more .modal-dialog.modal-lg {
+  width: 84vw;
+  max-width: unset; }
+/* line 41, modalStyle/_modelsFixx.scss */
+#hasafahSociety-more .model-header {
+  margin-bottom: 25px; }
+
+/* line 49, modalStyle/_modelsFixx.scss */
+.hasafahSociety-more .social-imgs {
+  display: flex;
+  justify-content: space-between; }
+  /* line 53, modalStyle/_modelsFixx.scss */
+  .hasafahSociety-more .social-imgs .social-item {
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; }
+    /* line 64, modalStyle/_modelsFixx.scss */
+    .hasafahSociety-more .social-imgs .social-item .item-img {
+      margin-bottom: 20px; }
+    /* line 68, modalStyle/_modelsFixx.scss */
+    .hasafahSociety-more .social-imgs .social-item .item-txt {
+      font-size: 16px;
+      font-family: "Frutiger-Black";
+      pointer-events: none; }
+/* line 78, modalStyle/_modelsFixx.scss */
+.hasafahSociety-more .social-txt p {
+  margin-bottom: 50px;
+  font-size: 16px;
+  text-align: center; }
+
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -687,21 +909,25 @@ a:focus, a:hover {
   /* line 50, mainStyle/_mediaFixx.scss */
   .footer-section .social-txt {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+
+  /* line 56, mainStyle/_mediaFixx.scss */
+  .inputModal-fixx .fileInputFixx {
+    justify-content: flex-end; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /* line 63, mainStyle/_mediaFixx.scss */
+  /* line 68, mainStyle/_mediaFixx.scss */
   .header-centerLogo span {
     font-size: 20px; }
 
-  /* line 68, mainStyle/_mediaFixx.scss */
+  /* line 73, mainStyle/_mediaFixx.scss */
   .service-item {
     flex-direction: column;
     align-items: center; }
-    /* line 72, mainStyle/_mediaFixx.scss */
+    /* line 77, mainStyle/_mediaFixx.scss */
     .service-item .item-img {
       margin: 0; }
-    /* line 74, mainStyle/_mediaFixx.scss */
+    /* line 79, mainStyle/_mediaFixx.scss */
     .service-item .item-info .item-header, .service-item .item-info .item-txt {
       text-align: center; } }
 
