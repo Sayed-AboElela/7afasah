@@ -907,7 +907,7 @@ a:focus, a:hover {
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1400px) {
   /* line 3, mainStyle/_mediaFixx.scss */
-  .message-section, .phylsf-section, .vission-section {
+  .message-section, .phylsf-section, .vission-section, .ourService-section, .studios-section {
     background-size: cover; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
