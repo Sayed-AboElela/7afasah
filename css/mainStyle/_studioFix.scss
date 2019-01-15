@@ -36,7 +36,10 @@
         align-items: center;
     }
 
-    .header-img{}
+    .header-img{
+        height: 57px;
+        overflow: hidden;
+    }
 
     .header-txt{
         padding-top: 20px;

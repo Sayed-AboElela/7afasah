@@ -118,11 +118,17 @@ a:focus, a:hover {
     z-index: 5;
 
     .aFixx{
-        width: 35px;
+        width: 42px;
         height: 35px;
         border: 1px solid #f8736a;
+        background-color:  #ffffff3b;
         border-left: 0;
         border-top-right-radius: 17.5px;
         border-bottom-right-radius: 17.5px;
+
+        &:hover{
+            background-color: white;
+            color: #37877C;
+        }
     }
 }

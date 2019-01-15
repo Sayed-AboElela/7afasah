@@ -88,12 +88,17 @@ a:focus, a:hover {
   z-index: 5; }
   /* line 120, mainStyle/_helpers.scss */
   .langBtn .aFixx {
-    width: 35px;
+    width: 42px;
     height: 35px;
     border: 1px solid #f8736a;
+    background-color: #ffffff3b;
     border-left: 0;
     border-top-right-radius: 17.5px;
     border-bottom-right-radius: 17.5px; }
+    /* line 129, mainStyle/_helpers.scss */
+    .langBtn .aFixx:hover {
+      background-color: white;
+      color: #37877C; }
 
 /* line 1, mainStyle/_headerFix.scss */
 .header-section {
@@ -114,7 +119,7 @@ a:focus, a:hover {
 .header-centerLogo {
   position: relative;
   z-index: 3;
-  padding-top: 8vh;
+  padding-top: 90px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -270,12 +275,13 @@ a:focus, a:hover {
     /* line 27, mainStyle/_vissionFix.scss */
     .vission-section .vission-info h3 {
       font-family: "Frutiger-Black";
-      font-size: 24px; }
-    /* line 31, mainStyle/_vissionFix.scss */
+      font-size: 24px;
+      margin-bottom: 20px; }
+    /* line 32, mainStyle/_vissionFix.scss */
     .vission-section .vission-info p {
       font-family: "Frutiger-Light";
       font-size: 18px;
-      line-height: 38px;
+      line-height: 30px;
       margin: 0;
       max-width: 600px;
       text-align: justify; }
@@ -386,7 +392,8 @@ a:focus, a:hover {
     .development-item .itemHeader h3 {
       font-size: 18px;
       font-family: "Frutiger-Black";
-      max-width: 285px; }
+      max-width: 285px;
+      line-height: 30px; }
     /* line 38, mainStyle/_developmentFix.scss */
     .development-item .itemHeader:before {
       position: absolute;
@@ -437,10 +444,14 @@ a:focus, a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  /* line 41, mainStyle/_studioFix.scss */
+  /* line 39, mainStyle/_studioFix.scss */
+  .studios-item .header-img {
+    height: 57px;
+    overflow: hidden; }
+  /* line 44, mainStyle/_studioFix.scss */
   .studios-item .header-txt {
     padding-top: 20px; }
-    /* line 44, mainStyle/_studioFix.scss */
+    /* line 47, mainStyle/_studioFix.scss */
     .studios-item .header-txt .aFixx {
       font-size: 16px;
       font-family: "Frutiger-Black";
@@ -449,7 +460,7 @@ a:focus, a:hover {
       padding-bottom: 20px;
       align-items: baseline;
       margin-bottom: 20px; }
-      /* line 54, mainStyle/_studioFix.scss */
+      /* line 57, mainStyle/_studioFix.scss */
       .studios-item .header-txt .aFixx:before {
         transition: all 0.5s ease;
         position: absolute;
@@ -460,31 +471,31 @@ a:focus, a:hover {
         bottom: 0px;
         right: 50%;
         transform: translate(50%); }
-      /* line 66, mainStyle/_studioFix.scss */
+      /* line 69, mainStyle/_studioFix.scss */
       .studios-item .header-txt .aFixx:hover {
         color: #f8736a; }
-        /* line 69, mainStyle/_studioFix.scss */
+        /* line 72, mainStyle/_studioFix.scss */
         .studios-item .header-txt .aFixx:hover:before {
           background-color: #f8736a; }
-  /* line 78, mainStyle/_studioFix.scss */
+  /* line 81, mainStyle/_studioFix.scss */
   .studios-item .item-data p {
     margin: 0;
     font-size: 15px;
     text-align: center; }
-  /* line 85, mainStyle/_studioFix.scss */
+  /* line 88, mainStyle/_studioFix.scss */
   .studios-item .seeBtn {
     position: absolute;
     bottom: 0;
     left: 0; }
-    /* line 90, mainStyle/_studioFix.scss */
+    /* line 93, mainStyle/_studioFix.scss */
     .studios-item .seeBtn .aFixx {
       width: 34px;
       height: 34px;
       background-color: #f2f2f2; }
-      /* line 95, mainStyle/_studioFix.scss */
+      /* line 98, mainStyle/_studioFix.scss */
       .studios-item .seeBtn .aFixx:hover {
         background-color: #f8736a; }
-        /* line 98, mainStyle/_studioFix.scss */
+        /* line 101, mainStyle/_studioFix.scss */
         .studios-item .seeBtn .aFixx:hover img {
           content: url("../images/plsVctrHvrd.png") !important; }
 
@@ -676,7 +687,8 @@ a:focus, a:hover {
 /* line 5, modalStyle/_mainModalFixx.scss */
 .modal-content {
   overflow: hidden;
-  border-radius: 0; }
+  border-radius: 0;
+  box-shadow: none; }
 
 /* line 11, modalStyle/_mainModalFixx.scss */
 .modal-body {
@@ -695,7 +707,7 @@ a:focus, a:hover {
     left: 0; }
     /* line 31, modalStyle/_mainModalFixx.scss */
     .modal-body .closeBtnFixx:hover {
-      background-color: #f8736a; }
+      background-color: white; }
 
 /* line 37, modalStyle/_mainModalFixx.scss */
 .model-header {
@@ -889,70 +901,110 @@ a:focus, a:hover {
 .hasafahSociety-more .social-txt p {
   margin-bottom: 50px;
   font-size: 16px;
-  text-align: center; }
+  text-align: center;
+  line-height: 30px; }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 3, mainStyle/_mediaFixx.scss */
+  .hasafahSociety-more .social-imgs {
+    justify-content: space-around;
+    flex-wrap: wrap; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 11, mainStyle/_mediaFixx.scss */
+  /* line 14, mainStyle/_mediaFixx.scss */
   .ourService-section {
     background-size: cover; }
 
-  /* line 14, mainStyle/_mediaFixx.scss */
+  /* line 17, mainStyle/_mediaFixx.scss */
   .studios-item {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  /* line 22, mainStyle/_mediaFixx.scss */
+  .vission-section {
+    background-image: url("../images/vision.jpg");
+    background-size: cover; }
+    /* line 25, mainStyle/_mediaFixx.scss */
+    .vission-section .vission-info {
+      align-items: center; }
+      /* line 28, mainStyle/_mediaFixx.scss */
+      .vission-section .vission-info p {
+        text-align: center; }
+
+  /* line 34, mainStyle/_mediaFixx.scss */
+  .message-section {
+    background-image: url("../images/message.jpg");
+    background-size: cover; }
+    /* line 38, mainStyle/_mediaFixx.scss */
+    .message-section .message-info p {
+      text-align: center; }
+
+  /* line 44, mainStyle/_mediaFixx.scss */
+  .phylsf-section {
+    background-image: url("../images/phylsf.jpg");
+    background-size: cover; }
+    /* line 47, mainStyle/_mediaFixx.scss */
+    .phylsf-section .phylsf-info {
+      align-items: center; }
+      /* line 49, mainStyle/_mediaFixx.scss */
+      .phylsf-section .phylsf-info h3 {
+        color: white; }
+      /* line 53, mainStyle/_mediaFixx.scss */
+      .phylsf-section .phylsf-info p {
+        text-align: center;
+        color: white; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* line 24, mainStyle/_mediaFixx.scss */
+  /* line 66, mainStyle/_mediaFixx.scss */
   .top-nav {
     padding-right: 20px;
     padding-left: 20px; }
 
-  /* line 28, mainStyle/_mediaFixx.scss */
+  /* line 70, mainStyle/_mediaFixx.scss */
   .header-centerLogo span {
     font-size: 24px; }
 
-  /* line 33, mainStyle/_mediaFixx.scss */
+  /* line 75, mainStyle/_mediaFixx.scss */
   .social-section .contrFixx, .social-section .social-btns {
     flex-direction: column; }
 
-  /* line 37, mainStyle/_mediaFixx.scss */
+  /* line 79, mainStyle/_mediaFixx.scss */
   .social-section .right-section, .social-section .left-section,
   .social-section .social-btns .right-btn, .social-section .social-btns .left-btn {
     align-items: center;
     margin: 0 !important;
     justify-content: center; }
 
-  /* line 43, mainStyle/_mediaFixx.scss */
+  /* line 85, mainStyle/_mediaFixx.scss */
   .social-section .social-btns .aFixx {
     margin-bottom: 25px; }
 
-  /* line 47, mainStyle/_mediaFixx.scss */
+  /* line 89, mainStyle/_mediaFixx.scss */
   .social-section .social-item {
     width: 90vw; }
 
-  /* line 51, mainStyle/_mediaFixx.scss */
+  /* line 93, mainStyle/_mediaFixx.scss */
   .footer-section .social-txt {
     flex-direction: column;
     align-items: center; }
 
-  /* line 57, mainStyle/_mediaFixx.scss */
+  /* line 99, mainStyle/_mediaFixx.scss */
   .inputModal-fixx .fileInputFixx {
     justify-content: flex-end; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /* line 69, mainStyle/_mediaFixx.scss */
+  /* line 111, mainStyle/_mediaFixx.scss */
   .header-centerLogo span {
     font-size: 20px; }
 
-  /* line 74, mainStyle/_mediaFixx.scss */
+  /* line 116, mainStyle/_mediaFixx.scss */
   .service-item {
     flex-direction: column;
     align-items: center; }
-    /* line 78, mainStyle/_mediaFixx.scss */
+    /* line 120, mainStyle/_mediaFixx.scss */
     .service-item .item-img {
       margin: 0; }
-    /* line 80, mainStyle/_mediaFixx.scss */
+    /* line 122, mainStyle/_mediaFixx.scss */
     .service-item .item-info .item-header, .service-item .item-info .item-txt {
       text-align: center; } }
 
