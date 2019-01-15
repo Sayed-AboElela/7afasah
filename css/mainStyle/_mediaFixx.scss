@@ -1,4 +1,13 @@
- /* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1400px) {
+    .message-section , .phylsf-section ,.vission-section{
+        background-size: cover;
+    }
+}
+
+
+
+/* Medium Devices, Desktops */
  @media only screen and (max-width : 992px) {
     .hasafahSociety-more .social-imgs {
         justify-content: space-around;
