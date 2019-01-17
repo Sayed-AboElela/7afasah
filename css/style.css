@@ -83,19 +83,18 @@ a:focus, a:hover {
 /* line 114, mainStyle/_helpers.scss */
 .langBtn {
   position: absolute;
-  top: 20px;
+  top: 33px;
   left: 0;
   z-index: 5; }
   /* line 120, mainStyle/_helpers.scss */
   .langBtn .aFixx {
     width: 42px;
     height: 35px;
-    border: 1px solid #f8736a;
     background-color: #ffffff3b;
     border-left: 0;
     border-top-right-radius: 17.5px;
     border-bottom-right-radius: 17.5px; }
-    /* line 129, mainStyle/_helpers.scss */
+    /* line 128, mainStyle/_helpers.scss */
     .langBtn .aFixx:hover {
       background-color: white;
       color: #37877C; }
@@ -176,8 +175,8 @@ a:focus, a:hover {
   display: flex; }
   /* line 12, mainStyle/_sideNav.scss */
   .top-nav .left-links ul li {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 12.5px;
+    margin-left: 12.5px;
     font-family: "Frutiger-Bold";
     font-size: 16px; }
   /* line 20, mainStyle/_sideNav.scss */
@@ -694,8 +693,8 @@ a:focus, a:hover {
 .modal-body {
   padding-top: 70px;
   padding-bottom: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
   position: relative; }
   /* line 22, modalStyle/_mainModalFixx.scss */
   .modal-body .closeBtnFixx {
