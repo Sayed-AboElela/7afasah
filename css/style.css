@@ -994,21 +994,26 @@ a:focus, a:hover {
 
   /* line 108, mainStyle/_mediaFixx.scss */
   .inputModal-fixx .fileInputFixx {
-    justify-content: flex-end; } }
+    justify-content: flex-end; }
+
+  /* line 112, mainStyle/_mediaFixx.scss */
+  #hasafahSociety-more .modal-dialog.modal-lg {
+    width: unset;
+    max-width: unset; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /* line 120, mainStyle/_mediaFixx.scss */
+  /* line 125, mainStyle/_mediaFixx.scss */
   .header-centerLogo span {
     font-size: 20px; }
 
-  /* line 125, mainStyle/_mediaFixx.scss */
+  /* line 130, mainStyle/_mediaFixx.scss */
   .service-item {
     flex-direction: column;
     align-items: center; }
-    /* line 129, mainStyle/_mediaFixx.scss */
+    /* line 134, mainStyle/_mediaFixx.scss */
     .service-item .item-img {
       margin: 0; }
-    /* line 131, mainStyle/_mediaFixx.scss */
+    /* line 136, mainStyle/_mediaFixx.scss */
     .service-item .item-info .item-header, .service-item .item-info .item-txt {
       text-align: center; } }
 
