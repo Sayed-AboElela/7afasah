@@ -1,17 +1,18 @@
 .modal-dialog.modal-lg {
     max-width: 777px;
+    max-width: 1170px!important;
 }
 
 .modal-content{
     overflow: hidden;
     border-radius: 0;
     box-shadow: none;
+    max-width: 1170px;
 }
 
 .modal-body{
     padding-top: 70px;
     padding-bottom: 40px;
-
     padding-right: 30px;
     padding-left: 30px;
 
